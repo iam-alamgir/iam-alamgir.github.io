@@ -1,0 +1,27 @@
+{
+  "extends": "@quasar/app/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "target": "es5",
+    "paths": {
+      "css/*": ["src/css/*"],
+      "router/*": ["src/router/*"],
+      "statics/*": ["src/statics/*"],
+      "store/*": ["src/store/*"]
+    },
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "test/**/*.ts"
+  ]
+}

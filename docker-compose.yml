@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  dev:
+    restart: always
+    image: quasar-dev:1.0
+    container_name: portfolio-alamgir
+    ports:
+      - 8888:3000
+    networks:
+      - portfolio
+    volumes:
+      - ./:/home/app
+
+networks:
+  portfolio:
